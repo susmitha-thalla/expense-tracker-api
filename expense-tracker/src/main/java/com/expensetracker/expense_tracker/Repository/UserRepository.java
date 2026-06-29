@@ -1,6 +1,6 @@
-package Repository;
+package com.expensetracker.expense_tracker.Repository;
 
-import Entity.User;
+import com.expensetracker.expense_tracker.Entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User,Long> {

@@ -1,4 +1,4 @@
-package Entity;
+package com.expensetracker.expense_tracker.Entity;
 
 import jakarta.persistence.*;
 @Entity @Table(name = "users")
@@ -9,6 +9,8 @@ public class User {
     @Column(unique = true,nullable = false)
     private  String email;
     private String password;
+    @Column(unique = true,nullable = false)
+    private String username;
 
     public int getId() {
         return id;
@@ -49,9 +51,5 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
-
-    @Column(unique = true,nullable = false)
-    private String username;
-
 
 }
